@@ -162,6 +162,7 @@ public class About extends javax.swing.JFrame {
             public void run() {
                 new About();
             }
+        
         });
     }
 
