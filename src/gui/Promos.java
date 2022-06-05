@@ -45,6 +45,7 @@ public class Promos extends javax.swing.JFrame {
         try{
             
             pst = conn.prepareStatement(sql);
+
             rs = pst.executeQuery();
             jTable1.setModel(DbUtils.resultSetToTableModel(rs));
             
@@ -109,7 +110,7 @@ public class Promos extends javax.swing.JFrame {
             }
             else
             {
-                JOptionPane.showMessageDialog(null, "Item NOT Found");
+                JOptionPane.showMessageDialog(null, "Item NOT found");
             }
         }
         catch(SQLException e)
@@ -133,7 +134,7 @@ public class Promos extends javax.swing.JFrame {
             e.printStackTrace();
         }
        
-        JOptionPane.showMessageDialog(null, "Values updated Successfylly:\n\tTax per Item           = "+ new_tax +"\n\tDiscount per Item = "+new_disc);
+        JOptionPane.showMessageDialog(null, "Values updated Successfully:\n\tTax per Item           = "+ new_tax +"\n\tDiscount per Item = "+new_disc);
         
     }
     
