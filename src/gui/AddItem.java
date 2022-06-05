@@ -17,7 +17,7 @@ import net.proteanit.sql.DbUtils;
 
 /**
  *
- * @author Muhammad
+ * @author Usama-Ash1
  */
 class IntMiss extends Exception {
 
