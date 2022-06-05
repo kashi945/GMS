@@ -287,7 +287,6 @@ public class AdminPage extends javax.swing.JFrame {
         );
 
         bindingGroup.bind();
-
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
