@@ -9,7 +9,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Shahid
+ * @author Usama-Ash1
  */
 public class About extends javax.swing.JFrame {
 
