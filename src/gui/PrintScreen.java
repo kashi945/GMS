@@ -12,7 +12,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Muhammad
+ * @author Muzammil
  */
 public class PrintScreen extends javax.swing.JFrame {
 
@@ -53,6 +53,7 @@ public class PrintScreen extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
@@ -178,6 +179,7 @@ public class PrintScreen extends javax.swing.JFrame {
         );
 
         setSize(new java.awt.Dimension(871, 809));
+        
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
