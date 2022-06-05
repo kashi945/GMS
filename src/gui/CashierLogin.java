@@ -13,9 +13,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 /**
  *
- * @author Muhammad
+ * @author Kashif
  */
-public class CashierLogin extends javax.swing.JFrame {
+public class CashierLogin  extends javax.swing.JFrame {
 
    
     Statement st;
