@@ -31,7 +31,7 @@ public class Sales extends javax.swing.JFrame {
         initComponents();
         conn = Database.connection();
         //updateTable();
-        sdf = new SimpleDateFormat ("MMM dd,yyyy");
+        sdf = new SimpleDateFormat ("MMM dd, yyyy");
         
     }  
     /**
@@ -97,12 +97,12 @@ public class Sales extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Bill No.", "Product ID", "Product Name", "Quantity Sold", "Discount /Item", "Price /Item", "Total Price", "Time", "Date", "Cashier", "Total Profit"
+                "Bill No.", "Product ID", "Product Name", "Quantity Sold", "Discount/Item", "Price/Item", "Total Price", "Time", "Date", "Cashier", "Total Profit"
             }
         ));
         jScrollPane2.setViewportView(jTable2);
 
-        jLabel2.setText("Total Profit on :");
+        jLabel2.setText("Total Profit:");
 
         jTextField1.setEditable(false);
 
