@@ -95,6 +95,7 @@ public class Promos extends javax.swing.JFrame {
             
             if( rs.next() )
             {
+                //Typecasting
                 price = Integer.parseInt(rs.getString(3)) ;
                
                 tax_dbl = price * ( tax_per / 100 );
@@ -103,6 +104,7 @@ public class Promos extends javax.swing.JFrame {
                 disc_dbl = price * ( disc_per / 100);
                 new_disc = (int) disc_dbl;
                 
+                //Typecasting
                 sp = (int)price + new_tax - new_disc ;
                 
                 rs.close();
