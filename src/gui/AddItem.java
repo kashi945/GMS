@@ -47,6 +47,7 @@ public class AddItem extends javax.swing.JFrame {
      pst = conn.prepareStatement(sql);
      rs = pst.executeQuery();
      if (rs.next()) {
+     // Boxing
      id = ((Number) rs.getObject(1)).intValue() + 2  ;
      id=id+1;
      jTextField7.setText("" + (id+1) );
@@ -61,11 +62,14 @@ public class AddItem extends javax.swing.JFrame {
     public void newID() {
 
         String get = "select MAX(ProductID)+1 from ItemTable";
-        int id = 0;
+        Integer id_ = new Integer(0);
         try {
             pst = conn.prepareStatement(get);
             rs = pst.executeQuery();
             if (rs.next()) {
+                
+                //Unboxing
+                int id = id_;
                 id = Integer.parseInt(rs.getString(1));
                 jTextField7.setText("" + id);
                 rs.close();
