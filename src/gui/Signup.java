@@ -238,7 +238,8 @@ public class Signup extends javax.swing.JFrame {
 
     public void ConfirmPass (int a, int b) throws PassMiss
     {
-        int c;
+        // Boxing (Wrapping into Integer object)
+        Integer c = new Integer(null);
         boolean cf;
         c=Integer.compare(a, b);
         if (c!=0)
