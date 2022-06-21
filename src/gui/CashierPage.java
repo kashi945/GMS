@@ -51,6 +51,41 @@ public class CashierPage extends javax.swing.JFrame {
         
     }
     
+	public void findProdID(Integer currentRow)
+    {
+        String a1 = jComboBox1.getSelectedItem().toString();
+        String sql = "select * from ItemTable where ProductID='"+a1+"'";
+        String currentID = currentRow.toString();
+        
+        try{
+            pst = conn.prepareStatement(sql);
+            rs=pst.executeQuery();
+            // if our current ID is not 
+            if (!rs.equals(a1))
+            {
+                currentRow++;
+                currentID = rs.getNString(a1);
+                findProdID(currentRow);
+                
+            }
+            else{
+                jTextField5.setText(rs.getString(2));
+                jTextField6.setText(rs.getString(6));
+                jTextField7.setText(rs.getString(7));
+          //    jTextField9.setText(mul( jTextField2.getText() , jTextField6.getText() ));
+          //    jTextField4.setText(mul( jTextField2.getText() , rs.getString(5) ));
+                
+                rs.close();
+                pst.close();
+            }
+            
+            
+        }
+        catch (Exception e)
+        {
+            JOptionPane.showMessageDialog(null,e);
+        }
+    }
     
     public void updateTable()
     {
