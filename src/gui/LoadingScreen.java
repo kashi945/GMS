@@ -21,19 +21,7 @@ public class LoadingScreen extends javax.swing.JFrame implements Runnable {
     int s=0;
     Thread th;
     
-    public LoadingScreen() {
-        super("Loading");
-        initComponents();
-        th = new Thread ( (Runnable) this );
-    }
-    
-    public void setUpLoading ()
-    {
-        setVisible(false);
-        th.start();
-    }
-    
-    public void run ()
+     public void run ()
     {
         
         try
@@ -78,6 +66,19 @@ public class LoadingScreen extends javax.swing.JFrame implements Runnable {
         }
         
     }
+    
+    public LoadingScreen() {
+        super("Loading");
+        initComponents();
+        th = new Thread ( (Runnable) this );
+    }
+    
+    public void setUpLoading ()
+    {
+        setVisible(false);
+        th.start();
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
